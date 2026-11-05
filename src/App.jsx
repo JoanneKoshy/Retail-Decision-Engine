@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+﻿import { useEffect, useState } from 'react'
 import Home from './pages/Home.jsx'
 import Price from './pages/Price.jsx'
 import Promotion from './pages/Promotion.jsx'
 import Markdown from './pages/Markdown.jsx'
 import Bundles from './pages/Bundles.jsx'
 import Assumptions from './pages/Assumptions.jsx'
+import Chat from './Chat.jsx'
 
 export const PAGES = [
   { id: 'home', label: 'Overview', icon: '◧', Component: Home },
@@ -69,6 +70,7 @@ export default function App() {
           <Component />
         </main>
       </div>
+      <Chat />
     </div>
   )
 }
