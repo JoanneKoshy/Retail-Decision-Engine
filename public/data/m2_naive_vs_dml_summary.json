@@ -1,0 +1,1 @@
+[{"Unnamed: 0":"naive OLS (no controls)","median":-1.181,"share_positive":0.294},{"Unnamed: 0":"fixed-effects OLS","median":-1.027,"share_positive":0.157},{"Unnamed: 0":"DoubleML","median":-0.82,"share_positive":0.333}]

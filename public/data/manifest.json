@@ -1,0 +1,539 @@
+[
+ {
+  "file": "m1_build_log.json",
+  "rows": 1,
+  "columns": [
+   "rows_before_price_join",
+   "rows_kept",
+   "rows_dropped_no_price",
+   "rows_price_anomaly",
+   "anomaly_rule"
+  ]
+ },
+ {
+  "file": "m1_price_variation_by_item_store.json",
+  "rows": 30490,
+  "columns": [
+   "store_id",
+   "item_id",
+   "nunique",
+   "min",
+   "max",
+   "range_pct"
+  ]
+ },
+ {
+  "file": "m1_promo_spotcheck_10_skus.json",
+  "rows": 2768,
+  "columns": [
+   "item_id",
+   "store_id",
+   "wm_yr_wk",
+   "sell_price",
+   "regular_price",
+   "promo_flag",
+   "discount_depth"
+  ]
+ },
+ {
+  "file": "m2_elasticity_per_item_store_unpooled.json",
+  "rows": 150,
+  "columns": [
+   "item_id",
+   "store_id",
+   "cat_id",
+   "total_units",
+   "n_prices",
+   "elasticity",
+   "se",
+   "ci_low",
+   "ci_high",
+   "naive_ols",
+   "ols_with_controls",
+   "n_obs"
+  ]
+ },
+ {
+  "file": "m2_elasticity_results.json",
+  "rows": 150,
+  "columns": [
+   "item_id",
+   "store_id",
+   "elasticity",
+   "conf_interval",
+   "demand_type",
+   "pricing_recommendation",
+   "review_reason",
+   "cat_id",
+   "se",
+   "ci_low",
+   "ci_high",
+   "fe_ols",
+   "naive_ols",
+   "share_weeks_kept",
+   "n_obs",
+   "total_units",
+   "method"
+  ]
+ },
+ {
+  "file": "m2_learner_comparison.json",
+  "rows": 54,
+  "columns": [
+   "item_id",
+   "dml_trees",
+   "dml_ridge",
+   "ci_low",
+   "ci_high",
+   "fe_ols",
+   "was_positive"
+  ]
+ },
+ {
+  "file": "m2_naive_vs_dml_summary.json",
+  "rows": 3,
+  "columns": [
+   "Unnamed: 0",
+   "median",
+   "share_positive"
+  ]
+ },
+ {
+  "file": "m2_positive_elasticity_diagnostics.json",
+  "rows": 21,
+  "columns": [
+   "item_id",
+   "elasticity",
+   "low_price_weeks",
+   "zero_days_per_week_low_price",
+   "zero_days_per_week_other",
+   "avg_units_low_price",
+   "avg_units_other",
+   "share_low_price_weeks_in_last_year"
+  ]
+ },
+ {
+  "file": "m2_selected_item_stores.json",
+  "rows": 150,
+  "columns": [
+   "item_id",
+   "store_id",
+   "cat_id",
+   "total_units",
+   "n_prices",
+   "p_min",
+   "p_max",
+   "n_days",
+   "price_range"
+  ]
+ },
+ {
+  "file": "m2_spec_comparison.json",
+  "rows": 54,
+  "columns": [
+   "item_id",
+   "elasticity_store_year_sep",
+   "ci_low_store_year_sep",
+   "ci_high_store_year_sep",
+   "elasticity_store_x_year",
+   "ci_low_store_x_year",
+   "ci_high_store_x_year",
+   "share_within_store_year",
+   "cat_id"
+  ]
+ },
+ {
+  "file": "m2_stability_across_stores.json",
+  "rows": 21,
+  "columns": [
+   "item_id",
+   "stores",
+   "mean",
+   "std",
+   "min",
+   "max"
+  ]
+ },
+ {
+  "file": "m2_stockout_comparison.json",
+  "rows": 54,
+  "columns": [
+   "item_id",
+   "all_weeks",
+   "in_stock_weeks",
+   "ci_low",
+   "ci_high",
+   "fe_ols",
+   "share_weeks_kept",
+   "was_positive"
+  ]
+ },
+ {
+  "file": "m3_break_even_lift.json",
+  "rows": 21,
+  "columns": [
+   "category",
+   "margin",
+   "discount",
+   "sales_multiple_needed",
+   "note"
+  ]
+ },
+ {
+  "file": "m3_hand_worked_examples.json",
+  "rows": 3,
+  "columns": [
+   "item_id",
+   "store_id",
+   "cat_id",
+   "promo_start",
+   "promo_end",
+   "promo_days",
+   "baseline_units",
+   "baseline_days",
+   "promo_units",
+   "post_units",
+   "post_days",
+   "promo_price",
+   "regular_price",
+   "zero_sale_promo_days",
+   "discount_depth",
+   "baseline_sales",
+   "promo_sales",
+   "post_sales",
+   "baseline_ok",
+   "post_ok",
+   "stockout_risk",
+   "margin_assumed",
+   "unit_cost",
+   "incremental_units",
+   "incremental_revenue",
+   "incremental_margin",
+   "discount_cost",
+   "promotion_ROI",
+   "lift_pct",
+   "post_dip_units",
+   "post_dip_margin",
+   "net_margin_incl_dip",
+   "recommendation"
+  ]
+ },
+ {
+  "file": "m3_portfolio_by_category.json",
+  "rows": 3,
+  "columns": [
+   "cat_id",
+   "windows",
+   "volume_weighted_lift",
+   "portfolio_ROI",
+   "share_profitable",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_portfolio_by_depth.json",
+  "rows": 5,
+  "columns": [
+   "discount_depth",
+   "windows",
+   "volume_weighted_lift",
+   "portfolio_ROI",
+   "share_profitable",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_portfolio_by_store.json",
+  "rows": 10,
+  "columns": [
+   "store_id",
+   "windows",
+   "volume_weighted_lift",
+   "portfolio_ROI",
+   "share_profitable",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_promotion_uplift_results.json",
+  "rows": 3532,
+  "columns": [
+   "item_id",
+   "store_id",
+   "baseline_sales",
+   "promo_sales",
+   "incremental_units",
+   "incremental_revenue",
+   "incremental_margin",
+   "promotion_ROI",
+   "recommendation",
+   "reliability",
+   "cat_id",
+   "n_promotions",
+   "avg_discount",
+   "discount_cost",
+   "expected_units"
+  ]
+ },
+ {
+  "file": "m3_promotion_windows.json",
+  "rows": 16474,
+  "columns": [
+   "item_id",
+   "store_id",
+   "cat_id",
+   "promo_start",
+   "promo_end",
+   "promo_days",
+   "baseline_units",
+   "baseline_days",
+   "promo_units",
+   "post_units",
+   "post_days",
+   "promo_price",
+   "regular_price",
+   "zero_sale_promo_days",
+   "discount_depth",
+   "baseline_sales",
+   "promo_sales",
+   "post_sales",
+   "baseline_ok",
+   "post_ok",
+   "stockout_risk",
+   "margin_assumed",
+   "unit_cost",
+   "incremental_units",
+   "incremental_revenue",
+   "incremental_margin",
+   "discount_cost",
+   "promotion_ROI",
+   "lift_pct",
+   "post_dip_units",
+   "post_dip_margin",
+   "net_margin_incl_dip",
+   "recommendation",
+   "baseline_avg_price",
+   "regular_inflated",
+   "window_type",
+   "analysis_group",
+   "measurable"
+  ]
+ },
+ {
+  "file": "m3_sensitivity.json",
+  "rows": 8,
+  "columns": [
+   "min_baseline_per_day",
+   "stockout_windows_removed",
+   "windows",
+   "volume_weighted_lift",
+   "portfolio_ROI",
+   "share_profitable",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_summary_by_category.json",
+  "rows": 3,
+  "columns": [
+   "cat_id",
+   "windows",
+   "median_lift",
+   "share_profitable",
+   "median_ROI",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_summary_by_depth.json",
+  "rows": 5,
+  "columns": [
+   "discount_depth",
+   "windows",
+   "median_lift",
+   "share_profitable",
+   "median_ROI",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_summary_by_store.json",
+  "rows": 10,
+  "columns": [
+   "store_id",
+   "windows",
+   "median_lift",
+   "share_profitable"
+  ]
+ },
+ {
+  "file": "m3_tpr_by_category.json",
+  "rows": 3,
+  "columns": [
+   "cat_id",
+   "windows",
+   "median_lift",
+   "share_profitable",
+   "median_ROI"
+  ]
+ },
+ {
+  "file": "m3_tpr_by_depth.json",
+  "rows": 5,
+  "columns": [
+   "discount_depth",
+   "windows",
+   "median_lift",
+   "share_profitable",
+   "median_ROI",
+   "total_incr_margin"
+  ]
+ },
+ {
+  "file": "m3_tpr_highvolume_by_category.json",
+  "rows": 2,
+  "columns": [
+   "cat_id",
+   "windows",
+   "volume_weighted_lift",
+   "portfolio_ROI"
+  ]
+ },
+ {
+  "file": "m3_tpr_highvolume_by_depth.json",
+  "rows": 5,
+  "columns": [
+   "discount_depth",
+   "windows",
+   "volume_weighted_lift",
+   "total_incr_units",
+   "total_incr_margin",
+   "total_discount_cost",
+   "portfolio_ROI"
+  ]
+ },
+ {
+  "file": "m4_markdown_by_scenario_and_weeks_left.json",
+  "rows": 6,
+  "columns": [
+   "scenario",
+   "weeks_left",
+   "avg_markdown",
+   "share_marked_down",
+   "profit_gain_vs_no_markdown",
+   "0%",
+   "10%",
+   "20%",
+   "30%",
+   "40%",
+   "50%"
+  ]
+ },
+ {
+  "file": "m4_markdown_recommendations.json",
+  "rows": 43400,
+  "columns": [
+   "SKU",
+   "category",
+   "current_stock",
+   "weeks_cover",
+   "recommended_markdown",
+   "expected_sales",
+   "expected_margin",
+   "leftover_inventory",
+   "action",
+   "dataset_optimal_discount"
+  ]
+ },
+ {
+  "file": "m4_optimised_vs_fixed_rules.json",
+  "rows": 8,
+  "columns": [
+   "scenario",
+   "rule",
+   "total_profit",
+   "vs_no_markdown"
+  ]
+ },
+ {
+  "file": "m5_all_pairs.json",
+  "rows": 1909,
+  "columns": [
+   "product_a",
+   "product_b",
+   "rule",
+   "aisle_a",
+   "aisle_b",
+   "department_a",
+   "department_b",
+   "n_orders_together",
+   "support",
+   "confidence",
+   "confidence_a_to_b",
+   "confidence_b_to_a",
+   "lift",
+   "relationship_hint",
+   "m5_category_a",
+   "m5_category_b",
+   "validation_status"
+  ]
+ },
+ {
+  "file": "m5_build_log.json",
+  "rows": 7,
+  "columns": [
+   "step",
+   "value"
+  ]
+ },
+ {
+  "file": "m5_bundle_candidates.json",
+  "rows": 1576,
+  "columns": [
+   "antecedent",
+   "consequent",
+   "antecedent_aisle",
+   "consequent_aisle",
+   "department_a",
+   "department_b",
+   "n_orders_together",
+   "n_users_together",
+   "orders_per_user",
+   "support",
+   "confidence",
+   "lift",
+   "user_support",
+   "user_lift",
+   "relationship_hint",
+   "customer_check",
+   "m5_category_a",
+   "m5_category_b",
+   "validation_status"
+  ]
+ },
+ {
+  "file": "m5_bundle_top20.json",
+  "rows": 20,
+  "columns": [
+   "antecedent",
+   "consequent",
+   "antecedent_aisle",
+   "consequent_aisle",
+   "department_a",
+   "department_b",
+   "n_orders_together",
+   "n_users_together",
+   "orders_per_user",
+   "support",
+   "confidence",
+   "lift",
+   "user_support",
+   "user_lift",
+   "relationship_hint",
+   "customer_check",
+   "m5_category_a",
+   "m5_category_b",
+   "validation_status"
+  ]
+ }
+]

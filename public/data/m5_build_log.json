@@ -1,0 +1,1 @@
+[{"step":"orders sampled","value":300000},{"step":"products kept","value":1778},{"step":"order lines kept","value":1937902},{"step":"frequent pairs","value":1909},{"step":"pairs with lift > 1.5","value":1576},{"step":"shortlist: same aisle","value":403},{"step":"shortlist: different aisle","value":1173}]

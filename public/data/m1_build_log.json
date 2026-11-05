@@ -1,0 +1,1 @@
+[{"rows_before_price_join":59181090,"rows_kept":46881677,"rows_dropped_no_price":12299413,"rows_price_anomaly":3240,"anomaly_rule":"discount_depth > 0.75"}]
